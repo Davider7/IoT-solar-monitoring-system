@@ -1,0 +1,14 @@
+BEGIN
+   Initialize sensors (INA219, BH1750, DHT22)
+   LOOP every sampling interval
+       Read voltage from INA219
+       Read current from INA219
+       Read lux from BH1750
+       Read temperature & humidity from DHT22
+       IF any value is invalid (NaN) THEN
+           Discard reading
+       ELSE
+           Pass values to computation module
+       ENDIF
+   END LOOP
+END
