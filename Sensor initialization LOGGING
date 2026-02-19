@@ -1,0 +1,7 @@
+BEGIN
+   Every logInterval
+       Open log.csv file
+       Write (Timestamp, Voltage, Current, Power, Temp, Lux, Alert)
+       Close file
+   END
+END
