@@ -1,0 +1,20 @@
+BEGIN
+   Start ESP32 Web Server
+   Serve index.html + chart.min.js
+   Fetch /data endpoint from ESP32 every few seconds
+   Update Charts with new values:
+       Chart1: Voltage vs Time
+       Chart2: Current vs Time
+       Chart3: Power vs Time
+       Chart4: Lux vs Time
+       Chart5: Temp vs Time
+   Update Health Bar in Solar Panel State tab
+END
+BEGIN
+   IF new firmware uploaded THEN
+        Write firmware to flash memory
+        Reboot ESP32
+   ELSE
+        Continue normal monitoring
+   ENDIF
+END
