@@ -1,0 +1,6 @@
+BEGIN
+   Input: Voltage (V), Current (I), ShuntVoltage, Lux, Temp, Humidity
+   Calculate Power = V × I
+   Calculate SourceVoltage = BusVoltage + (ShuntVoltage / 1000)
+   RETURN Power, SourceVoltage
+END
