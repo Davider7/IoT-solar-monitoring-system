@@ -1,0 +1,15 @@
+BEGIN
+   Input: Lux, Power, Temp
+   IF (Lux > 30000 AND Power < 10) THEN
+        Alert = "Clean the panel"
+   ELSE IF (Lux < 10000 AND Power < 10 AND Time = Day) THEN
+        Alert = "Low sunlight — reduce load"
+   ELSE IF (Power > 30) THEN
+        Alert = "System Healthy — Increase Load"
+   ELSE IF (Temp > 40 AND Power < 15) THEN
+        Alert = "High Temp — Performance Drop"
+   ELSE
+        Alert = "Normal Operation"
+   ENDIF
+   RETURN Alert
+END
